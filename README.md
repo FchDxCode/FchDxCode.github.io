@@ -1,7 +1,6 @@
 # FchDxCode.github.io
 code by: FCH
 
-Link To Web,
-Not Responsive To Mobile. On Going To Responsive Mobile
+link to the web, not responsive to mobile, mobile responsive version is being made
 
 https://fchdxcode.github.io/
