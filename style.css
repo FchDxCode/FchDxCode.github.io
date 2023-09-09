@@ -1,0 +1,582 @@
+@font-face {
+  font-family: "GothamLight";
+  src: url('/assets/fonts/GothamLight.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: transparent;
+  text-decoration: none;
+  font-family: 'Poppins';
+  right: 10px;
+  user-select: none;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 10px;
+}
+
+.navbar a {
+  color: #ffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  left: 170px;
+  height: 1px;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar a:hover:after {
+  transform: scaleX(1);
+}
+
+.navbar a::before {
+  margin-left: auto;
+}
+
+.navbar a::after,
+.navbar a::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f443369a;
+  display: block;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after,
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.clock {
+  position: relative;
+  right: 1030px;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: monospace;
+  padding: 23px;
+  display: inline-block;
+  cursor: none;
+  transition: color 0.3s ease-in-out;
+  user-select: none;
+}
+
+.clock:hover {
+  color: #f443369a;
+}
+
+.background-section {
+  background-color: #1F242D;
+  background-size: cover;
+  background-position: center center;
+  height: 445vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  user-select: none;
+  user-zoom: none;
+}
+
+.card-container {
+  width: 350px;
+  height: 320px;
+  top: 150px;
+  left: 840px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card2 {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card2 .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card2 .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #ffc56f 0%, #FF5733 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card2 .content3 {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  gap: 10px;
+  background: linear-gradient(-45deg, #ffc56f 0%, #FF5733 100%);
+  color: #000000;
+  padding: 20px;
+  line-height: 1.5;
+  pointer-events: none;
+  transform: translateX(85%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card2 .content3 .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card2:hover .content3 {
+  transform: translateY(0);
+}
+
+.card2:hover .front-content {
+  transform: translateX(20%);
+}
+
+.card2:hover .front-content p {
+  opacity: 0;
+}
+
+.button-play {
+  font-weight: bold;
+  background: transparent;
+  color: #000000;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+  margin-top: 50px;
+  position: relative;
+  top: -300px;
+  left: 37px;
+  overflow: hidden;
+  border: none;
+  background-image: linear-gradient(to right, transparent 50%, #ff5833c6 50%);
+  background-position: 100%;
+  background-size: 200% 100%;
+  user-select: none;
+}
+
+.button-play:hover {
+  color: #ffffff;
+  background-position: 0 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.h2_1Content {
+  text-align: center;
+  font-family: 'Montserrat';
+  margin: 0;
+  position: absolute;
+  top: 210px;
+  left: 130px;
+  background-color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  user-select: none;
+}
+
+.h2Content {
+  text-align: center;
+  font-family: 'Montserrat';
+  margin: 0;
+  position: absolute;
+  top: 210px;
+  left: 62px;
+  background-color: #FF5733;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  user-select: none;
+}
+
+.h1Content {
+  font-family: 'Montserrat';
+  margin: 0;
+  position: absolute;
+  top: 260px;
+  left: 62px;
+  background-color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  user-select: none;
+}
+
+.h3Content {
+  font-family: 'Montserrat';
+  margin: 0;
+  position: absolute;
+  top: 390px;
+  left: 62px;
+  background-color: #FF5733;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  user-select: none;
+}
+
+.card1 {
+  position: relative;
+  top: 25px;
+  right: 235px;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  background-position: center;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: #f443369a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.pemisah {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.29);
+  right: 215px;
+  width: 800px;
+  height: 0px;
+  bottom: -2px;
+}
+
+.pemisah1 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.29);
+  right: 215px;
+  width: 800px;
+  height: 0px;
+  top: 1150px;
+}
+
+.pemisah2 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.29);
+  right: 215px;
+  width: 800px;
+  height: 0px;
+  top: 1800px;
+}
+
+.about-content {
+  padding: 55px;
+  padding-bottom: 75px;
+  height: 500px;
+  width: 100vw;
+  right: 400px;
+  position: relative;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.about-heading {
+  font-size: 30px;
+  padding: 15px;
+  left: 45%;
+  display: flex;
+  font-weight: bold;
+  font-family: 'Poppins';
+  background: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-top: 30px;
+  margin-left: 40%;
+  margin-bottom: 10px;
+}
+
+.MyPict {
+  background-image: url('/assets/mypict1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 300px;
+  margin-left: 10px;
+  height: 320px;
+  margin-top: 40px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-pointer-events: none;
+  pointer-events: none;
+}
+
+.about-text {
+  height: max-content;
+  bottom: 330px;
+  font-family: 'Poppins';
+  position: relative;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-left: 450px;
+  width: 55%;
+}
+
+.skill-judul {
+  position: relative;
+  left: 45%;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  font-family: 'Poppins';
+}
+
+.skills-background {
+  height: 500px;
+  width: 100vw;
+  position: flex;
+  margin-left: -108%;
+}
+
+.stats {
+  position: relative;
+  top: 50px;
+  left: 62px;
+}
+
+.contribution {
+  position: relative;
+  top: 250px;
+  left: -240px;
+}
+
+.leangues {
+  position: relative;
+  top: 250px;
+  left: -205px;
+}
+
+.contact-content {
+  display: flex;
+  position: absolute;
+  align-content: center;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 100px;
+  top: 300px;
+  left: 220px;
+}
+
+.contactJudul {
+  position: absolute;
+  font-family: 'Poppins';
+  bottom: -190px;
+  left: 650px;
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-bg {
+  position: relative;
+  top: 10px;
+  height: max-content;
+  width: 90vw;
+  right: 520px;
+}
+
+.cardCon1 {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  bottom: 50px;
+  background-color: #ffffff78;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact_bg1 {
+  background-repeat: no-repeat;
+  background-size: 200%;
+  width: 100%;
+  height: 100%;
+}
+
+.contact_bg1_ptr {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+}
+
+.cardCon1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cardCon1:hover .card__content1 {
+  transform: rotateX(0deg);
+}
+
+.card__title1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.cardCon1:hover svg {
+  scale: 0;
+}
+
+.card__description1 {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.footer {
+  font-weight: bold;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 55px;
+  overflow: hidden;
+  border: none;
+  background-image: linear-gradient(to right, transparent 50%, #ff5833c6 50%);
+  background-position: 100%;
+  background-size: 200% 100%;
+  user-select: none;
+}
+
+.footer:hover {
+  background-position: 0 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
