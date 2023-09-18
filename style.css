@@ -201,21 +201,6 @@ body {
   padding: 20px;
 }
 
-.h2_1Content {
-  text-align: center;
-  font-family: 'Montserrat';
-  margin: 0;
-  position: absolute;
-  top: 210px;
-  left: 130px;
-  background-color: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 40px;
-  user-select: none;
-}
-
 .h2Content {
   text-align: center;
   font-family: 'Montserrat';
@@ -224,6 +209,21 @@ body {
   top: 210px;
   left: 62px;
   background-color: #FF5733;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  user-select: none;
+}
+
+.h2_IMContent {
+  font-family: 'Montserrat';
+  margin: 0;
+  margin-left: 10px;
+  position: absolute;
+  top: 210px;
+  left: 130px;
+  background-color: white;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -579,4 +579,74 @@ body {
 .footer a {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 720px) {
+  body {
+      padding: 0;
+      margin: 0;
+  }
+
+  .navbar {
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      top: 5px;
+  }
+
+  .navbar a {
+      left: 0; 
+      padding: 10px;
+  }
+
+  .button-play {
+      position: relative;
+      right: 10px;
+  }
+
+  .clock {
+      display: none;
+  }
+
+  .button-play {
+      position: relative;
+      top: -377px;
+
+  }
+
+  .h2Content {
+      position: absolute;
+      top: 180px;
+  }
+
+  .h2_1Content {
+      position: absolute;
+      top: 180px;
+  }
+
+  .h1Content {
+      position: absolute;
+      top: 230px;
+  }
+
+  .h3Content {
+      position: absolute;
+      top: 360px;
+  }
+
+  .pemisah, 
+  .pemisah1,
+  .pemisah2{
+      display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .button-play {
+      display: flex;
+      position: relative;
+      top: -377px;
+      margin-left: -40px;
+      
+  }
 }
